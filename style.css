@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+h1 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    /*text-align: center;*/
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.75s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.banner_image {
+    height: 325px;
+    width: 100%;
+}
+
+.pc_build_image {
+    height: 325px;
+    width: 550px;
+}
+
+.budget_gaming_image {
+    height: 325px;
+    width: 550px;
+}
+
+.vr_gaming_image {
+    height: 325px;
+    width: 550px;
+}
+
+.sales_image {
+    height: 325px;
+    width: 550px;
+}
+
+.mission_statement_image {
+    height: 325px;
+    width: 550px;
+}
